@@ -44,7 +44,7 @@ function getWesterosiDate(date) {
 }
 
 function formatIC(d, showTime) {
-  if (!d) return 'The ravens ready for flight...';
+  if (!d) return 'The ravens ready for flight.';
   var s = 'The ' + ORDINALS[d.day] + ' Day of the ' + MOON_ORDS[d.moon] + ' Moon of ' + d.acYear + ' AC';
   if (showTime) s += ', ' + getTOD(d.hour);
   return s;
@@ -141,7 +141,7 @@ function renderCalendar() {
     var cls = 'cal-day' + (other ? ' other-month' : '') + (isToday ? ' today' : '');
     html += '<div class="' + cls + '">';
     html += '<div class="cal-day-num">' + day + '</div>';
-    if (icShort) html += '<div class="cal-day-ic">' + icShort + '</div>';
+    
     html += evHTML;
     html += '</div>';
   }
