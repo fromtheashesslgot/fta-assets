@@ -44,7 +44,7 @@ function getWesterosiDate(date) {
 }
 
 function formatIC(d, showTime) {
-  if (!d) return 'The setting has not yet begun — it opens the First of July.';
+  if (!d) return 'The ravens ready for flight...';
   var s = 'The ' + ORDINALS[d.day] + ' Day of the ' + MOON_ORDS[d.moon] + ' Moon of ' + d.acYear + ' AC';
   if (showTime) s += ', ' + getTOD(d.hour);
   return s;
